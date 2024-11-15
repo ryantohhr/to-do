@@ -1,0 +1,103 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    font-family: Roboto, ubuntu, sans-serif;
+  }
+  
+  html {
+    height: 100%;
+  }
+
+  body {
+    height: 100%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+body > header {
+    height: 15vh;
+    width: 100%;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+    background-color: #cff0f1;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+    border-right: 1px solid #bebbbb;
+    font-size: 1.5rem;
+}
+
+nav > header, nav > div > header {
+    padding: 0.5rem;
+    font-weight: 500;
+}
+
+div.projects > div {
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.projects > div > div {
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cff0f1;
+}
+
+div.projects > div:hover {
+    background-color: #bebbbb;
+}
+
+div.projects {
+    display: flex;
+    flex-direction: column;
+}
