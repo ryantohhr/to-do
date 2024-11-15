@@ -15,6 +15,15 @@ export class ToDo {
     }
 
     checkToDo() {
-        
+        switch(this.checked) {
+            case true:
+                this.checked = false;
+                break;
+            case false:
+                this.checked = true;
+                break;
+        }
     }
+
+    
 }
