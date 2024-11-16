@@ -3,6 +3,7 @@ export const DOMManipulator = (function() {
         for (let toDo of project) {
             const toDoContainer = document.createElement("div");
             toDoContainer.classList.add("to-do");
+            toDoContainer.classList.add(`${toDo.priority}`);
 
             const toDoTitle = document.createElement("div");
             toDoTitle.classList.add("title");
