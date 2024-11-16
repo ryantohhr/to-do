@@ -182,6 +182,7 @@ div.container > div > .details {
   align-items: center;
   border-radius: 5px;
   border: 1px solid gray;
+  font-weight: 550;
 }
 
 div.container > div > svg {
@@ -222,6 +223,7 @@ div.add-project-modal > button {
   border-radius: 3px;
   display: flex;
   align-items: center;
+  transition: all .3s;
 }
 
 div.add-project-modal > div.title > svg {
