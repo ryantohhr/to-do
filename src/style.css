@@ -74,6 +74,24 @@ nav > header, nav > div > header, div.new-project {
     font-weight: 500;
 }
 
+div.add-button {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  font-weight: 500;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cff0f1;
+}
+
+div.add-button > svg {
+  height: 2rem;
+}
+
 div.projects > div {
     padding: 0.5rem;
     border-radius: 5px;
