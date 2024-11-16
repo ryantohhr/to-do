@@ -12,4 +12,29 @@ const main = (function() {
     return { addProject };
 })();
 
+const renderModals = (function() {
+    function renderProjectModal() {
+        const addProjectModal = document.querySelector(".add-project-modal");
+        const newProjectBtn = document.querySelector(".new-project");
+        
+        newProjectBtn.addEventListener('click', () => {
+            addProjectModal.style.display = "flex";
+        })
+
+        const projectModalClose = document.querySelector(".project-modal-close");
+        projectModalClose.addEventListener('click', () => {
+            addProjectModal.style.display = "none";
+        })
+    }
+
+    function renderToDoModal() {
+        const addToDoModal = document.querySelector(".add-todo-modal");
+        const plusToDoBtn = document.querySelector(".add-button");
+
+    }
+
+    renderProjectModal();
+})();
+
+
 
