@@ -3,9 +3,13 @@ import { ToDo } from "./todo-mod.js";
 import { Project } from "./projects-mod.js";
 import { DOMManipulator } from "./dom-mod.js";
 
-const todo1 = new ToDo("To-Do List", "HTML, CSS, Javascript", "16 Nov", "medium");
-const home = new Project("Home");
-home.addToDo(todo1);
+const main = (function() {
+    function addProject(title) {
+        const project = new Project(title);
+        DOMManipulator.displayProject(project);
+    }
+    
+    return { addProject };
+})();
 
-DOMManipulator.displayProject(home);
-DOMManipulator.displayToDo(home);
+
