@@ -1,6 +1,6 @@
 export const DOMManipulator = (function() {
     function displayToDo(project) {
-        for (let toDo of project) {
+        for (let toDo of project.toDos) {
             const toDoContainer = document.createElement("div");
             toDoContainer.classList.add("to-do");
             toDoContainer.classList.add(`${toDo.priority}`);
@@ -37,6 +37,14 @@ export const DOMManipulator = (function() {
             deleteBtnPath.setAttribute("d", "M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z");
             deleteBtn.appendChild(deleteBtnPath);
 
+            toDoContainer.appendChild(toDoTitle);
+            toDoContainer.appendChild(toDoDate);
+            toDoContainer.appendChild(toDoDetails);
+            toDoContainer.appendChild(editBtn);
+            toDoContainer.appendChild(deleteBtn);
+
+            const mainContainer = document.querySelector("div.container");
+            mainContainer.appendChild(toDoContainer);
         }
     }
 
