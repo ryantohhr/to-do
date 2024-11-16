@@ -31,9 +31,18 @@ const renderModals = (function() {
         const addToDoModal = document.querySelector(".add-todo-modal");
         const plusToDoBtn = document.querySelector(".add-button");
 
+        plusToDoBtn.addEventListener('click', () => {
+            addToDoModal.style.display = "grid";
+        })
+
+        const toDoModalClose = document.querySelector(".todo-modal-close");
+        toDoModalClose.addEventListener('click', () => {
+            addToDoModal.style.display = "none";
+        })
     }
 
     renderProjectModal();
+    renderToDoModal();
 })();
 
 
