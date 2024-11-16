@@ -36,5 +36,13 @@ export const DOMManipulator = (function() {
         }
     }
 
-    return { displayToDo };
+    function displayProject(project) {
+        const projectDiv = document.createElement("div");
+        projectDiv.textContent = `${project.title}`;
+
+        const projectContainer = document.querySelector(".projects");
+        projectContainer.appendChild(projectDiv);
+    }
+
+    return { displayToDo, displayProject };
 })();
