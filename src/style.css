@@ -8,7 +8,7 @@
   }
   
   html {
-    height: 100%;
+    height: 100vh;
   }
 
   body {
@@ -42,7 +42,7 @@
   }
 
 body > header {
-    height: 15vh;
+    height: 15%;
     width: 100%;
     font-size: 2.5rem;
     display: flex;
@@ -53,7 +53,7 @@ body > header {
 }
 
 main {
-    height: 100%;
+    height: 85%;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;
@@ -66,11 +66,11 @@ nav {
     background-color: #f7f7f7;
     border-right: 1px solid #bebbbb;
     font-size: 1.5rem;
+    gap: 1rem;
     overflow: hidden;
 }
 
 nav > header, nav > div > header, div.new-project {
-    padding: 0.5rem;
     font-weight: 500;
 }
 
