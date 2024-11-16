@@ -16,9 +16,9 @@ const renderModals = (function() {
     function renderProjectModal() {
         const addProjectModal = document.querySelector(".add-project-modal");
         const newProjectBtn = document.querySelector(".new-project");
-        
+
         newProjectBtn.addEventListener('click', () => {
-            addProjectModal.style.display = "flex";
+            addProjectModal.style.display = "grid";
         })
 
         const projectModalClose = document.querySelector(".project-modal-close");

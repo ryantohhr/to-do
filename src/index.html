@@ -54,7 +54,22 @@
     </div>
     <div class="add-todo-modal">
         <div class="title">New To-Do <svg class="todo-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>close</title><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></div>
-        
+        <input id="todo-title" type="text" placeholder="title">
+        <input id="todo-desc" type="text" placeholder="description">
+        <div class="date-container">
+            <div>Due Date:</div><input id="todo-date" type="date">
+        </div>
+        <div class="priority-container">
+            <div>Priority:</div>
+            <div class="button-container">
+                <input id="low-priority" name="priority" type="radio" value="low">
+                <label for="low-priority" class="priority-button low-priority-button low-priority-button-active">LOW</label>
+                <input id="medium-priority" name="priority" type="radio" value="medium">
+                <label for="medium-priority" class="priority-button medium-priority-button">MEDIUM</label>
+                <input id="high-priority" name="priority" type="radio" value="high">
+                <label for="high-priority" class="priority-button high-priority-button">HIGH</label>
+            </div>
+        </div>
     </div>
 </body>
 </html>

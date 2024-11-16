@@ -200,7 +200,7 @@ div.add-project-modal {
   top: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  flex-direction: column;
+  grid-template-rows: auto 1fr auto;
   gap: 1rem;
 }
 
@@ -230,3 +230,72 @@ div.add-project-modal > div.title > svg {
 div.add-project-modal > input {
   border: none;
 }
+
+div.add-project-modal > input:focus {
+  outline: none;
+}
+
+div.add-todo-modal {
+  padding: 2rem;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+}
+
+div.add-todo-modal > div.title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.add-todo-modal > div.title > svg {
+  height: 2rem;
+}
+
+div.date-container {
+  display: flex;
+}
+
+div.priority-container {
+  display: flex;
+  align-items: center;
+}
+
+div.button-container {
+  display: flex;
+}
+
+.priority-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1.5rem 0 -5px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 550;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+input[type="radio"] {
+  position: relative;
+  left: 2.2rem;
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+}
+
+.low-priority-button {
+  border: 1px solid #73aa5e;
+  color: #73aa5e;
+}
+
