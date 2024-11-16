@@ -126,6 +126,7 @@ div.projects {
 div.new-project {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 div.new-project > svg {
@@ -250,7 +251,7 @@ div.add-todo-modal {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  display: grid;
+  display: none;
   grid-template-rows: auto 1fr auto;
   gap: 1rem;
 }

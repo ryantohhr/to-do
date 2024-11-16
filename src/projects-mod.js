@@ -4,7 +4,7 @@ export class Project {
         this.toDos = [];
     }
 
-    addToDo(toDo) {
+    addToDoToProject(toDo) {
         this.toDos.push(toDo);
     }
 }

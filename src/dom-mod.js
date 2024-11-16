@@ -1,5 +1,9 @@
 export const DOMManipulator = (function() {
     function displayToDo(project) {
+        const mainContainer = document.querySelector("div.container");
+        while (mainContainer.firstChild) {
+            mainContainer.removeChild(mainContainer.firstChild);
+        }
         for (let toDo of project.toDos) {
             const toDoContainer = document.createElement("div");
             toDoContainer.classList.add("to-do");
@@ -31,7 +35,7 @@ export const DOMManipulator = (function() {
             toDoContainer.appendChild(editBtn);
             toDoContainer.appendChild(deleteBtn);
 
-            const mainContainer = document.querySelector("div.container");
+            
             mainContainer.appendChild(toDoContainer);
         }
     }
