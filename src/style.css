@@ -4,7 +4,7 @@
   
   * {
     margin: 0;
-    font-family: "Josefin Sans", ubuntu, sans-serif;
+    font-family: "Geist Mono", "Josefin Sans", ubuntu, sans-serif;
   }
   
   html {
@@ -193,8 +193,8 @@ div.add-project-modal {
   border: 2px solid black;
   background-color: white;
   border-radius: 5px;
-  height: 50vh;
-  width: 60vh;
+  width: 50%;
+  height: 40%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -210,10 +210,23 @@ div.add-project-modal > div.title {
   justify-content: space-between;
 }
 
+div.add-project-modal > button {
+  align-self: center;
+  justify-self: flex-end;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  background-color: white;
+  color: #73aa5e;
+  border: 1px solid #73aa5e;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
 div.add-project-modal > div.title > svg {
   height: 2rem;
 }
 
-div.add-project-modal > textarea {
-  resize: none;
+div.add-project-modal > input {
+  border: none;
 }
