@@ -66,9 +66,10 @@ nav {
     background-color: #f7f7f7;
     border-right: 1px solid #bebbbb;
     font-size: 1.5rem;
+    overflow: hidden;
 }
 
-nav > header, nav > div > header {
+nav > header, nav > div > header, div.new-project {
     padding: 0.5rem;
     font-weight: 500;
 }
@@ -100,6 +101,21 @@ div.projects > div:hover {
 div.projects {
     display: flex;
     flex-direction: column;
+    overflow: scroll;
+    height: 55vh;
+}
+
+div.new-project {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.new-project > svg {
+  height: 2rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 div#content {
