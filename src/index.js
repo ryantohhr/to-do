@@ -39,6 +39,26 @@ const renderModals = (function() {
         toDoModalClose.addEventListener('click', () => {
             addToDoModal.style.display = "none";
         })
+
+        const lowPrioBtn = document.querySelector(".low-priority-button");
+        const medPrioBtn = document.querySelector(".medium-priority-button");
+        const highPrioBtn = document.querySelector(".high-priority-button");
+
+        lowPrioBtn.addEventListener('click', () => {
+            lowPrioBtn.classList.add("low-priority-button-active");
+            medPrioBtn.classList.remove("medium-priority-button-active");
+            highPrioBtn.classList.remove("high-priority-button-active");
+        });
+        medPrioBtn.addEventListener('click', () => {
+            lowPrioBtn.classList.remove("low-priority-button-active");
+            medPrioBtn.classList.add("medium-priority-button-active");
+            highPrioBtn.classList.remove("high-priority-button-active");
+        })
+        highPrioBtn.addEventListener('click', () => {
+            lowPrioBtn.classList.remove("low-priority-button-active");
+            medPrioBtn.classList.remove("medium-priority-button-active");
+            highPrioBtn.classList.add("high-priority-button-active");
+        })
     }
 
     renderProjectModal();

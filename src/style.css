@@ -215,6 +215,7 @@ div.add-project-modal > button {
   justify-self: flex-end;
   font-size: 0.75rem;
   padding: 0.5rem;
+  font-weight: 600;
   background-color: white;
   color: #73aa5e;
   border: 1px solid #73aa5e;
@@ -229,10 +230,12 @@ div.add-project-modal > div.title > svg {
 
 div.add-project-modal > input {
   border: none;
+  outline: none;
 }
 
-div.add-project-modal > input:focus {
-  outline: none;
+.create-project-button:hover {
+  background-color: #73aa5e;
+  color: white;
 }
 
 div.add-todo-modal {
@@ -260,6 +263,18 @@ div.add-todo-modal > div.title > svg {
   height: 2rem;
 }
 
+div.add-todo-modal > input {
+  outline: none;
+  border: none;
+}
+
+#todo-desc {
+  height: 150px;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
 div.date-container {
   display: flex;
 }
@@ -275,13 +290,12 @@ div.button-container {
 
 .priority-button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 0 1.5rem 0 -5px;
-  padding: 0.25rem 0.75rem;
+  margin-right: 0.75rem;
+  padding: 0.25rem 0.8rem;
   border-radius: 3px;
-  font-size: 1rem;
-  font-weight: 550;
+  font-size: 0.85rem;
+  font-weight: 600;
   cursor: pointer;
   transition: all .3s;
 }
@@ -299,3 +313,43 @@ input[type="radio"] {
   color: #73aa5e;
 }
 
+.low-priority-button-active {
+  color: white;
+  background-color: #73aa5e;
+}
+
+.medium-priority-button {
+  border: 1px solid #ddb340;
+  color: #ddb340;
+}
+
+.medium-priority-button-active {
+  color: white;
+  background-color: #ddb340;
+}
+
+.high-priority-button {
+  border: 1px solid #ad6464;
+  color: #ad6464;
+}
+
+.high-priority-button-active {
+  color: white;
+  background-color: #ad6464;
+}
+
+input[type="date"] {
+  border: 1px solid #9cb0c9;
+  text-transform: uppercase;
+  font-weight: 550;
+  color: #9cb0c9;
+  border-radius: 3px;
+}
+
+div.options-container {
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 1fr 5fr;
+  justify-items: flex-start;
+  align-items: center;
+}
