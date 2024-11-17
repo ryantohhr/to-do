@@ -7,6 +7,8 @@ const main = (function() {
     const home = new Project("Home");
     let currentProject = home;
     projectList.push(home);
+    addToDo("hello, world", "", "2024-11-17", "low");
+    DOMManipulator.displayToDo(home);
 
     const homeBtn = document.querySelector(".home");
     homeBtn.addEventListener('click', () => {

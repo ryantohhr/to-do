@@ -277,7 +277,7 @@ div.add-todo-modal > div.title {
   justify-content: space-between;
 }
 
-div.add-todo-modal > div.title > svg {
+div.title > svg {
   height: 2rem;
 }
 
@@ -394,4 +394,31 @@ button.create-todo-button {
 button.create-todo-button:hover {
   background-color: #73aa5e;
   color: white;
+}
+
+div.details-modal {
+  padding: 2rem;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  gap: 1rem;
+}
+
+div.details-modal > div.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.details-modal > svg {
+  height: 2rem;
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
 }
