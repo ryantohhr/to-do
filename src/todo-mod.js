@@ -5,6 +5,7 @@ export class ToDo {
         this.dueDate = dueDate;
         this.priority = priority;
         this.checked = false;
+        this.id;
     }
 
     editToDo(newTitle, newDesc, newDueDate, newPriority) {
