@@ -62,7 +62,7 @@ const main = (function() {
         const toDo = new ToDo(title, desc, dueDate, priority);
         currentProject.addToDoToProject(toDo);
         if (currentProject !== home) {
-            home.addToDoToProject(toDo);
+            home.toDos.push(toDo);
         }
     }
 

@@ -59,7 +59,7 @@ export const DOMManipulator = (function() {
         const projectID = Number(idArray[0]);
         const toDoID = Number(idArray[1]);
         const currentProject = projectList[projectID];
-        currentProject.toDos.splice(toDoID, 1)
+        currentProject.toDos.splice(toDoID, 1);
         displayToDo(currentProject);
     }
 
