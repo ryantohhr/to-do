@@ -197,7 +197,7 @@ div.container > div > .details:hover {
   background-color: #bebbbb;
 }
 
-div.container > div > svg {
+div.container > div > div > svg, div.container > div > svg {
   height: 1.25rem;
 }
 

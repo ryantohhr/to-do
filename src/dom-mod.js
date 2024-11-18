@@ -35,7 +35,7 @@ export const DOMManipulator = (function() {
                 const deleteBtn = document.createElementNS("http://www.w3.org/2000/svg", "svg");
                 deleteBtn.setAttribute("viewBox", "0 0 24 24");
                 deleteBtn.innerHTML = '<title>Delete</title><path d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z" />';
-                deleteBtn.setAttribute("data-id", `${project.id},${toDo.id}`);
+                deleteBtn.dataset.id = `${project.id},${toDo.id}`;
                 deleteBtn.addEventListener('click', (event) => {
                     handleDeleteBtn(event);
                 })
@@ -53,7 +53,8 @@ export const DOMManipulator = (function() {
     }
 
     function handleDeleteBtn(event) {
-        const toDoData = event.target.dataset.id;
+        const toDoAccess = event.currentTarget;
+        const toDoData = toDoAccess.dataset.id;
         const idArray = toDoData.split(",");
         const projectID = Number(idArray[0]);
         const toDoID = Number(idArray[1]);

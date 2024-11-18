@@ -3,7 +3,12 @@ import { ToDo } from "./todo-mod.js";
 import { Project, projectList } from "./projects-mod.js";
 import { DOMManipulator, renderModals } from "./dom-mod.js";
 
+
+
+
+
 const main = (function() {
+    // Initialise homepage
     const home = new Project("Home");
     let currentProject = home;
     projectList.push(home);
@@ -16,7 +21,6 @@ const main = (function() {
         DOMManipulator.displayToDo(home);
     })
 
-    
     // Render Project Modal
     renderModals.renderProjectModal();
     const createProjectBtn = document.querySelector(".create-project-button");
