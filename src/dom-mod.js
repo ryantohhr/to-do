@@ -53,7 +53,7 @@ export const DOMManipulator = (function() {
     }
 
     function handleDeleteBtn(event) {
-        const toDoData = event.target.getAttribute("data-id");
+        const toDoData = event.target.dataset.id;
         const idArray = toDoData.split(",");
         const projectID = Number(idArray[0]);
         const toDoID = Number(idArray[1]);

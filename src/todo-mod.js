@@ -14,15 +14,4 @@ export class ToDo {
         this.dueDate = newDueDate;
         this.priority = newPriority;
     }
-
-    checkToDo() {
-        switch(this.checked) {
-            case true:
-                this.checked = false;
-                break;
-            case false:
-                this.checked = true;
-                break;
-        }
-    }
 }
