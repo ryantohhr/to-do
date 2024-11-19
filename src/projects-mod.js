@@ -9,6 +9,6 @@ export class Project {
 
     addToDoToProject(toDo) {
         this.toDos.push(toDo);
-        toDo.id = this.toDos.length - 1;
+        toDo.id = this.toDos.indexOf(toDo);
     }
 }
